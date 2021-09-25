@@ -55,8 +55,9 @@ header nav a:hover{
     align-items: flex-start;
     font-size: 16px;
     background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/7jE9RYxuFNGz5Lw0UVGXV7jZ7y8.jpg');
-    height: 600px;
+    height: 550px;
     background-size: cover;
+    padding-bottom: -50px;
 }
 
 .descricao{
@@ -78,7 +79,6 @@ header nav a:hover{
     padding: 15px 30px;
     margin-right: 15px;
     font-size: 12px;
-    cursor: pointer;
     margin-left: 20px;
     transition: .3s ease all;
 }
@@ -112,11 +112,21 @@ header nav a:hover{
 }
 
 .item{
+    display: flex;
     -webkit-animation: scaledown .4s linear;
     animation: scaledown 0.3s linear;
     animation-fill-mode: forwards;
     transform-origin: 50% 50%;
     margin-right: 20px;
+    margin-top: 11%;
+    margin-bottom: 10%;
+}
+.detalhe {
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between ;
+    height: 70%;
+    margin-right: 10px;
 }
 
 .item:hover{
@@ -126,6 +136,73 @@ header nav a:hover{
     animation-fill-mode: forwards;
     transform-origin: 50% 50%;
 }
+
+.detalhe-item {
+    padding-left: 10px;
+    padding-top: 10px;
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
+    text-align: left;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.detalhe-item:hover{  
+    cursor: pointer;
+    opacity:1;
+}
+
+.stars{
+    top: 30px;
+    margin-left: 9px;
+}
+
+.sobre{
+    margin: 8px;
+    font-size: 16px;
+}
+
+.classind{
+    margin: 8px 8px;
+    width: 20px;
+    height: 20px;
+    /*background-image: url('/img/classind16.png');*/
+    background-size:20px ;
+    background-repeat: no-repeat;
+}
+
+.botao-salvar{
+    height: 10%;
+    width: 10%;
+    display: flex;
+    -webkit-animation: scaledown .4s linear;
+    animation: scaledown 0.3s linear;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+    background-color:transparent;
+    border: none;
+    color: white;
+    padding: 4px 3px;
+    margin-right: 10px;
+    font-size: 12px;
+    margin-left: 20px;
+    transition: .3s ease all;
+}
+
+.botao-salvar:hover{
+    z-index: 100;
+    -webkit-animation: scale2 0.4s ease;
+    animation: scale2 0.3s linear;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+
+}
+
+
+
 
 @keyframes scaledown {
     0%{
@@ -147,5 +224,16 @@ header nav a:hover{
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
         box-shadow: 0 0 1em rgb(241, 241, 241);
+    }
+}
+
+@keyframes scale2{
+    0%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100%{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
 }

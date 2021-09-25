@@ -28,3 +28,20 @@
     }    
 }
 
+@media screen and (max-width:1500px) {
+    .detalhe {
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-between ;
+        height: 50%;
+        margin-right: 10px;
+    } 
+
+    .sobre{
+        margin: 6px;
+        font-size: 14px;
+    }
+}
+
+
+
